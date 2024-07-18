@@ -268,7 +268,7 @@ html , body{
 
 #pg-3-inner {
     display: flex;
-    animation: scroll 8s linear infinite;
+    animation: scroll 15s linear infinite;
 }
 
 #pg-3-icon {
@@ -305,7 +305,7 @@ html , body{
 
 #pg-6-inner {
     display: flex;
-    animation: scroll1 8s linear infinite;
+    animation: scroll1 15s linear infinite;
 }
 
 #pg-6-icon {

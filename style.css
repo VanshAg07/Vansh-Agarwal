@@ -1,0 +1,618 @@
+@font-face {
+    font-family: gilroy;
+    src: url(./gilroy/Gilroy-Heavy.ttf);
+}
+
+@font-face {
+    font-family: gilroyL;
+    src: url(./gilroy/Gilroy-Light.ttf);
+}
+
+@font-face {
+    font-family: gilroyM;
+    src: url(./gilroy/Gilroy-Medium.ttf);
+}
+
+@font-face {
+    font-family: gilroyR;
+    src: url(./gilroy/Gilroy-Regular.ttf);
+}
+@font-face{
+    font-family: gilroyS;
+    src: url(./gilroy/Gilroy-Black.ttf);
+}
+
+@font-face{
+    font-family: gilroyB;
+    src: url(./gilroy/Gilroy-Bold.ttf);
+}
+
+@font-face{
+    font-family: gilroyEB;
+    src: url(./gilroy/Gilroy-ExtraBold.ttf);
+}
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html , body{
+    height: 100%;
+    width: 100%;
+}
+
+#wrpper{
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+  }
+  
+  #nav-left > a {
+    font-family: gilroEB;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 500;
+    color: #000000;
+  }
+  
+  .nav-links {
+    display: flex;
+  }
+  
+  .nav-links a {
+    font-family: gilroR;
+    text-decoration: none;
+    font-size: 25px;
+    color: #000000;
+    margin-left: 20px;
+  }
+  
+  #nav-button {
+    color: #fff;
+    background-color: black;
+    padding: 5px 15px;
+    border-radius: 30px;
+  }
+  
+  #nav-button i {
+    padding-left: 5px;
+    font-size: 15px;
+  }
+  
+  .hamburger {
+    display: none;
+    cursor: pointer;
+  }
+  
+  .hamburger i {
+    font-size: 30px;
+    color: #000;
+  }
+  
+  .mobile-menu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    position: fixed; /* Fixed position to cover entire viewport */
+    top: 20; /* Start from the top of the viewport */
+    left: 0; /* Start from the left of the viewport */
+    width: 100%;
+    height: 100vh; /* Full height of the viewport */
+    padding: 10px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+  }
+  
+  
+  .mobile-menu a {
+    font-family: gilroR;
+    text-decoration: none;
+    font-size: 20px;
+    color: #000000;
+    padding: 10px 0;
+    width: 100%;
+    text-align: center;
+    background-color: #f9f9f9;
+  }
+  
+  .mobile-menu a:hover {
+    background-color: #ececec;
+  }
+  
+  @media (max-width: 768px) {
+    .nav-links {
+      display: none;
+    }
+  
+    .hamburger {
+      display: block;
+    }
+  }
+  
+
+  .pg-2 {
+    height: auto; /* Allow height to adjust based on content */
+    display: flex;
+    flex-direction: column; /* Stack items vertically on smaller screens */
+    justify-content: center;
+    align-items: center;
+    padding: 20px; /* Add padding for better spacing on smaller screens */
+    /* background-color: #000000b2; */
+}
+
+#pg-2-left {
+    padding: 20px 0; /* Reduce padding for smaller screens */
+}
+
+#pg-2-left > img {
+    height: 40vh; /* Reduce image height for smaller screens */
+    width: 80vw; /* Make image width responsive */
+    border-radius: 30px;
+}
+
+#pg-2-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center; /* Center text for better readability */
+    padding: 20px;
+}
+
+#pg-2-right > h1 {
+    font-family: gilroyS;
+    font-size: 50px; /* Reduce font size for smaller screens */
+    margin-bottom: 10px; /* Add margin for better spacing */
+}
+
+#pg-2-right > h3 {
+    font-family: gilroyS;
+    font-size: 30px; /* Reduce font size for smaller screens */
+    margin-bottom: 20px; /* Add margin for better spacing */
+}
+
+#pg-2-right-cont > p {
+    font-family: gilroyL;
+    font-size: 18px; /* Reduce font size for smaller screens */
+    padding-top: 20px; /* Adjust padding */
+    padding-bottom: 20px;
+    max-width: 90vw; /* Restrict the width for better readability */
+}
+
+#button1,
+#button2 {
+    padding: 12px 30px; /* Adjust padding */
+    border-radius: 50px;
+    background-color: #000000;
+    color: #fff;
+    font-size: 16px;
+    margin-bottom: 10px; /* Space between buttons */
+    width: auto; /* Let buttons adjust their width */
+}
+
+#button2 {
+    margin-left: 0; /* Remove margin for alignment on smaller screens */
+}
+
+#pg-2-right-cont i {
+    padding-left: 10px;
+}
+
+/* Media query for larger screens */
+@media (min-width: 600px) {
+    .pg-2 {
+        flex-direction: row; /* Revert to row layout on larger screens */
+        height: 90vh; /* Original height for larger screens */
+    }
+
+    #pg-2-left {
+        padding-left: 50px;
+        padding-top: 50px;
+    }
+
+    #pg-2-left > img {
+        height: 70vh; /* Original image height for larger screens */
+        width: 30vw; /* Original image width for larger screens */
+    }
+
+    #pg-2-right {
+        padding-left: 150px;
+        padding-right: 70px;
+        text-align: left; /* Left-align text for larger screens */
+    }
+
+    #pg-2-right > h1 {
+        font-size: 70px; /* Original font size for larger screens */
+    }
+
+    #pg-2-right > h3 {
+        font-size: 40px; /* Original font size for larger screens */
+    }
+
+    #pg-2-right-cont > p {
+        font-size: 23px; /* Original font size for larger screens */
+    }
+
+    #button1,
+    #button2 {
+        padding: 15px 40px; /* Original padding for larger screens */
+    }
+
+    #button2 {
+        margin-left: 90px; /* Original margin for larger screens */
+    }
+}
+
+
+.pg-3 {
+    height: 20vh;
+    width: calc(100vw - 60px); /* Adjust width to account for padding */
+    padding: 0 40px; /* Add left and right padding */
+    display: flex;
+    overflow: hidden;
+}
+
+#pg-3-inner {
+    display: flex;
+    animation: scroll 8s linear infinite;
+}
+
+#pg-3-icon {
+    display: flex;
+    align-items: center;
+    padding: 0 40px; /* Consistent padding between items */
+}
+
+#pg-3-icon i {
+    font-size: 60px;
+}
+
+#pg-3-icon p {
+    font-size: 25px;
+    padding-left: 10px;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-50%)); /* Adjust as necessary */
+    }
+}
+
+.pg-6 {
+    height: 20vh;
+    width: calc(100vw - 60px); /* Adjust width to account for padding */
+    padding: 0 40px; /* Add left and right padding */
+    display: flex;
+    overflow: hidden;
+}
+
+#pg-6-inner {
+    display: flex;
+    animation: scroll1 8s linear infinite;
+}
+
+#pg-6-icon {
+    display: flex;
+    align-items: center;
+    padding: 0 40px; /* Consistent padding between items */
+}
+#pg-6-icon img {
+    height: 70px;
+}
+
+#pg-6-icon i {
+    font-size: 60px;
+}
+
+#pg-6-icon p {
+    font-size: 25px;
+    padding-left: 10px;
+}
+
+@keyframes scroll1 {
+    0% {
+        transform: translateX(calc(-50%));
+    }
+    100% {
+        transform: translateX(0); /* Adjust as necessary */
+    }
+}
+
+
+
+#pg-4 {
+    height: auto; /* Allow height to adjust based on content */
+    width: 100vw;
+    padding-top: 50px;
+    padding-left: 10px; /* Add padding for smaller screens */
+    padding-right: 10px;
+    box-sizing: border-box; /* Ensure padding doesn't affect the overall width */
+}
+
+#pg-4 h1 {
+    font-family: gilroyB;
+    text-align: center;
+    font-size: 40px; /* Smaller font size for smaller screens */
+    color: #000000;
+    margin-bottom: 20px; /* Space below the heading */
+}
+
+#pg-4-cards {
+    display: flex;
+    flex-direction: column; /* Stack cards vertically on smaller screens */
+    align-items: center; /* Center cards horizontally */
+    gap: 20px; /* Space between cards */
+    padding-top: 30px;
+}
+
+.pg-4-card {
+    width: 90vw; /* Make cards take up most of the screen width */
+    background-color: black;
+    color: #fff;
+    border-radius: 30px;
+    height: auto; /* Allow height to adjust based on content */
+    padding: 20px;
+    cursor: pointer;
+    position: relative; /* Position relative for absolute positioning of child elements */
+    overflow: hidden; /* Hide overflow content */
+}
+
+.pg-4-card h3,
+.pg-4-card p,
+.pg-4-card hr {
+    transition: opacity 0.3s ease-in-out; /* Smooth transition for text opacity */
+    text-align: center; /* Center the text */
+}
+
+.pg-4-card h3 {
+    padding: 20px 0; /* Adjust padding for smaller screens */
+    font-size: 20px; /* Smaller font size */
+}
+
+.pg-4-card p {
+    padding-bottom: 20px; /* Adjust padding for smaller screens */
+    font-size: 16px; /* Smaller font size */
+}
+
+.pg-4-card hr {
+    border: 1px solid white;
+    margin-bottom: 10px;
+}
+
+.pg-4-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: opacity 0.3s ease-in-out;
+    opacity: 0;
+    pointer-events: none; /* Prevent interactions with the pseudo-element */
+}
+
+#pg-4-card1::before {
+    background-image: url(./img/Screenshot\ \(35\).png);
+}
+
+#pg-4-card2::before {
+    background-image: url(./img/Screenshot\ \(35\).png);
+}
+
+.pg-4-card:hover::before {
+    opacity: 1;
+    background-repeat: none;
+    object-fit: cover; /* Show the background image on hover */
+}
+
+/* Media query for larger screens */
+@media (min-width: 600px) {
+    #pg-4-cards {
+        flex-direction: row; /* Revert to horizontal layout on larger screens */
+        justify-content: space-evenly;
+    }
+
+    .pg-4-card {
+        width: 30vw; /* Original width for larger screens */
+        height: 40vh; /* Fixed height for larger screens */
+    }
+
+    #pg-4 h1 {
+        font-size: 50px; /* Original font size for larger screens */
+        margin-bottom: 30px;
+    }
+
+    .pg-4-card h3 {
+        font-size: 24px; /* Original font size for larger screens */
+        padding: 35px 20px;
+    }
+
+    .pg-4-card p {
+        font-size: 18px; /* Original font size for larger screens */
+        padding-bottom: 70px;
+    }
+}
+
+  
+
+  #pg-5 {
+    height: auto; 
+    width: 100vw;
+    padding-top: 50px;
+    padding-left: 10px; /* Add some padding for smaller screens */
+    padding-right: 10px;
+    padding-bottom: 20px;
+    box-sizing: border-box; /* Ensure padding doesn't affect the overall width */
+}
+
+#pg-5 > h1 {
+    text-align: center;
+    font-family: gilroyB;
+    font-size: 40px; /* Smaller font size for smaller screens */
+    padding-bottom: 20px; /* Reduced padding for smaller screens */
+}
+
+#pg-5-cards {
+    display: flex;
+    flex-direction: column; /* Stack cards vertically on smaller screens */
+    align-items: center; /* Center the cards */
+    gap: 20px; /* Space between the cards */
+}
+
+#pg-5-card1, #pg-5-card3{
+    min-height: 30vh;
+}
+#pg-5-card1, #pg-5-card3 {
+    background-color: #000000;
+    border-radius: 30px;
+    color: #fff;
+    width: 90vw; /* Make cards take up most of the screen width */
+    box-sizing: border-box; /* Include padding in the width */
+    padding: 20px;
+}
+
+.pg-5-card1, .pg-5-card3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px; /* Space between image and text */
+    flex-wrap: wrap; /* Allow content to wrap if needed */
+}
+
+.pg-5-card1 img, .pg-5-card3 img {
+    background-color: white;
+    border-radius: 50%; /* Circle shape */
+    height: 80px; /* Adjust image size for smaller screens */
+    width: 80px;
+}
+
+.pg-5-card2, .pg-5-card4 {
+    line-height: 1.4em; /* Consistent line height */
+    text-align: center; /* Center text for better appearance */
+}
+
+#pg-5-p {
+    text-align: center; /* Center the year text */
+    margin: 10px 0;
+}
+
+/* Media query for smaller screens */
+@media (min-width: 600px) {
+    #pg-5-cards {
+        flex-direction: row; /* Revert to horizontal layout on larger screens */
+        justify-content: space-evenly;
+    }
+
+    #pg-5-card1, #pg-5-card3 {
+        width: 45vw; /* Adjust card width for larger screens */
+    }
+
+    #pg-5 > h1 {
+        font-size: 50px; /* Original font size for larger screens */
+        padding-bottom: 30px;
+    }
+
+    .pg-5-card1 img, .pg-5-card3 img {
+        height: 100px; /* Original image size for larger screens */
+        width: 100px;
+    }
+}
+
+
+#pg-7 {
+    height: auto; /* Let height adjust based on content */
+    min-height: 10vh; /* Ensure a minimum height */
+    width: 100vw;
+    background-color: #000000;
+    color: #fff;
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    padding: 10px 20px; /* Adjust padding for smaller screens */
+    text-align: center; /* Center all text */
+}
+
+#pg-7-left {
+    flex: 1 0 auto; /* Take as much space as needed, but don't grow */
+    padding-left: 25px;
+    margin-bottom: 10px; /* Space between left links and middle icons */
+}
+
+#pg-7-left > a {
+    text-decoration: none;
+    color: white;
+    margin-right: 15px; /* Space between links */
+}
+
+#pg-7-mid {
+    flex: 1 0 auto; /* Take as much space as needed, but don't grow */
+    margin-bottom: 10px; /* Space between middle icons and right text */
+}
+
+#pg-7-mid > a {
+    text-decoration: none;
+    color: white;
+    margin-right: 15px; /* Space between icons */
+}
+
+#pg-7-mid > a i {
+    font-size: 20px;
+}
+
+#pg-7-right {
+    flex: 1 0 auto; /* Take as much space as needed, but don't grow */
+    padding-right: 25px;
+}
+
+#pg-7-right p {
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+
+@media (min-width: 600px) {
+    /* Adjust pg-4 cards to match pg-5 card styles */
+    #pg-4-card1, #pg-4-card2 {
+        background-color: #000000;
+        border-radius: 30px;
+        color: #fff;
+        width: 45vw; /* Match width to pg-5 cards */
+        box-sizing: border-box;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    /* Adjust pg-4 card text styles */
+    .pg-4-card h3 {
+        font-size: 24px;
+        padding: 35px 20px;
+    }
+
+    .pg-4-card p {
+        font-size: 18px;
+        padding-bottom: 20px;
+    }
+}
+

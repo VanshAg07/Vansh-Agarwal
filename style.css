@@ -171,15 +171,17 @@ html , body{
 }
 
 #pg-2-right > h1 {
-    font-family: gilroyS;
+    font-family: gilroyR;
     font-size: 50px; /* Reduce font size for smaller screens */
     margin-bottom: 10px; /* Add margin for better spacing */
+    font-weight: 500;
 }
 
 #pg-2-right > h3 {
-    font-family: gilroyS;
+    font-family: gilroyR;
     font-size: 30px; /* Reduce font size for smaller screens */
     margin-bottom: 20px; /* Add margin for better spacing */
+    font-weight: 500;
 }
 
 #pg-2-right-cont > p {
@@ -230,7 +232,7 @@ html , body{
         padding-left: 150px;
         padding-right: 70px;
         text-align: left; /* Left-align text for larger screens */
-        font-family: gilroyR;
+        
     }
 
     #pg-2-right > h1 {

@@ -230,6 +230,7 @@ html , body{
         padding-left: 150px;
         padding-right: 70px;
         text-align: left; /* Left-align text for larger screens */
+        font-family: gilroyR;
     }
 
     #pg-2-right > h1 {

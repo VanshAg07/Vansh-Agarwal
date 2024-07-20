@@ -363,6 +363,10 @@ html , body{
     padding-top: 30px;
 }
 
+#pg-4-cards a{
+    text-decoration: none;
+}
+
 .pg-4-card {
     width: 90vw; /* Make cards take up most of the screen width */
     background-color: black;

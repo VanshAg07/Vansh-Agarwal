@@ -237,10 +237,12 @@ html , body{
     }
 
     #pg-2-right > h1 {
+        font-family: gilroyB;
         font-size: 70px; /* Original font size for larger screens */
     }
 
     #pg-2-right > h3 {
+        font-family: gilroyM;
         font-size: 40px; /* Original font size for larger screens */
     }
 

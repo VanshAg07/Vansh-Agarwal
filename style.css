@@ -55,6 +55,7 @@ html , body{
     justify-content: space-between;
     align-items: center;
     padding: 20px 40px;
+    background-color: #000;
   }
   
   #nav-left > a {
@@ -62,7 +63,7 @@ html , body{
     text-decoration: none;
     font-size: 30px;
     font-weight: 500;
-    color: #000000;
+    color: #fff;
   }
   
   .nav-links {
@@ -73,15 +74,60 @@ html , body{
     font-family: gilroR;
     text-decoration: none;
     font-size: 25px;
-    color: #000000;
+    color: #fff;
     margin-left: 20px;
   }
+
+  #nav-left{
+    position: relative;
+  }
+
+  #nav-left a::after{
+    content: "";
+    position: absolute;
+    background-color: #fff;
+    height: 3px;
+    width: 0%;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+  }
+
+  #nav-left a:hover::after{
+    width: 80%;
+  }
+
+  #nav-mid{
+    position: relative;
+  }
+
+  #nav-mid a::after{
+    content: "";
+    position: absolute;
+    background-color: #fff;
+    height: 3px;
+    width: 0%;
+    left: 18%;
+    bottom: -10px;
+    transition: 0.3s;
+  }
+
+  #nav-mid a:hover::after{
+    width: 70%;
+  }
+
   
   #nav-button {
     color: #fff;
     background-color: black;
     padding: 5px 15px;
+    border: 2px;
     border-radius: 30px;
+
+  }
+
+  .fa-solid:hover{
+    color: #000;
   }
   
   #nav-button i {
@@ -189,27 +235,65 @@ html , body{
     font-family: gilroyL;
     font-size: 18px; /* Reduce font size for smaller screens */
     padding-top: 20px; /* Adjust padding */
-    padding-bottom: 20px;
+    padding-bottom: 40px;
     max-width: 90vw; /* Restrict the width for better readability */
 }
 
-#button1,
-#button2 {
-    padding: 12px 30px; /* Adjust padding */
-    border-radius: 50px;
-    background-color: #000000;
-    color: #fff;
-    font-size: 16px;
-    margin-bottom: 10px; /* Space between buttons */
-    width: auto; /* Let buttons adjust their width */
+#pg-2-right-button {
+    display: flex; /* Use flexbox for the button container */
+    justify-content: center;
+
+    align-items: center;
 }
 
-#button2 {
-    margin-left: 0; /* Remove margin for alignment on smaller screens */
+#button-2{
+    margin-left: 80px;
 }
 
 #pg-2-right-cont i {
     padding-left: 10px;
+}
+
+button {
+    padding: 0.1em 0.25em;
+    width: 13em;
+    height: 4.2em;
+    background-color: #212121;
+    border: 0.08em solid #fff;
+    border-radius: 0.3em;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+button span {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 0.4em;
+    width: 8.25em;
+    height: 2.5em;
+    background-color: #212121;
+    border-radius: 0.2em;
+    font-size: 1.5em;
+    color: #fff;
+    border: 0.08em solid #fff;
+    box-shadow: 0 0.4em 0.1em 0.019em #fff;
+}
+
+button span:hover {
+    transition: all 0.2s;
+    transform: translate(0, 0.4em);
+    box-shadow: 0 0 0 0 #fff;
+}
+
+button span:not(hover) {
+    transition: all 0.2s;
+}
+
+#pg-2-right-button a{
+    text-decoration: none;
+
 }
 
 /* Media query for larger screens */
@@ -233,7 +317,6 @@ html , body{
         padding-left: 150px;
         padding-right: 70px;
         text-align: left; /* Left-align text for larger screens */
-        
     }
 
     #pg-2-right > h1 {
@@ -250,14 +333,6 @@ html , body{
         font-size: 23px; /* Original font size for larger screens */
     }
 
-    #button1,
-    #button2 {
-        padding: 15px 40px; /* Original padding for larger screens */
-    }
-
-    #button2 {
-        margin-left: 90px; /* Original margin for larger screens */
-    }
 }
 
 
@@ -423,7 +498,7 @@ html , body{
 }
 
 #pg-4-card2::before {
-    background-image: url(./img/Screenshot\ \(35\).png);
+    background-image: url(https://instamobile.io/wp-content/uploads/2019/11/Restaurant-App-Cover2.png);
 }
 
 .pg-4-card:hover::before {
@@ -497,6 +572,17 @@ html , body{
     box-sizing: border-box; /* Include padding in the width */
     padding: 20px;
 }
+
+#pg-5-card1 a{
+    text-decoration: none;
+    color: #fff;
+}
+
+#pg-5-card3 a{
+    text-decoration: none;
+    color: #fff;
+}
+
 
 .pg-5-card1, .pg-5-card3 {
     display: flex;

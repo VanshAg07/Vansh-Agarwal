@@ -247,7 +247,7 @@ html , body{
 }
 
 #button-2{
-    margin-left: 80px;
+    margin-left: 10px;
 }
 
 #pg-2-right-cont i {
@@ -331,6 +331,10 @@ button span:not(hover) {
 
     #pg-2-right-cont > p {
         font-size: 23px; /* Original font size for larger screens */
+    }
+
+    #button-2{
+        margin-left: 80px;
     }
 
 }

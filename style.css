@@ -472,6 +472,11 @@ button span:not(hover) {
     overflow: hidden; /* Hide overflow content */
 }
 
+#pg-4-card1 h3{
+    font-family: gilroyM;
+    font-size: 30px;
+}
+
 .pg-4-card h3,
 .pg-4-card p,
 .pg-4-card hr {
@@ -623,6 +628,7 @@ button span:not(hover) {
 #pg-5-p {
     text-align: center; /* Center the year text */
     margin: 10px 0;
+    align-items: center;
 }
 
 /* Media query for smaller screens */

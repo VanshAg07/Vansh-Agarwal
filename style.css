@@ -656,39 +656,39 @@ button span:not(hover) {
 
 #pg-7 {
     height: auto; /* Let height adjust based on content */
-    min-height: 10vh; /* Ensure a minimum height */
+    min-height: 10vh;
     width: 100vw;
     background-color: #000000;
     color: #fff;
     display: flex;
-    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
-    justify-content: center; /* Center content horizontally */
-    align-items: center; /* Center content vertically */
-    padding: 10px 20px; /* Adjust padding for smaller screens */
-    text-align: center; /* Center all text */
+    flex-wrap: wrap; 
+    justify-content: center;
+    align-items: center; 
+    padding: 10px 20px;
+    text-align: center; 
 }
 
 #pg-7-left {
-    flex: 1 0 auto; /* Take as much space as needed, but don't grow */
+    flex: 1 0 auto; 
     padding-left: 25px;
-    margin-bottom: 10px; /* Space between left links and middle icons */
+    margin-bottom: 10px; 
 }
 
 #pg-7-left > a {
     text-decoration: none;
     color: white;
-    margin-right: 15px; /* Space between links */
+    margin-right: 15px;
 }
 
 #pg-7-mid {
-    flex: 1 0 auto; /* Take as much space as needed, but don't grow */
-    margin-bottom: 10px; /* Space between middle icons and right text */
+    flex: 1 0 auto; 
+    margin-bottom: 10px; 
 }
 
 #pg-7-mid > a {
     text-decoration: none;
     color: white;
-    margin-right: 15px; /* Space between icons */
+    margin-right: 15px; 
 }
 
 #pg-7-mid > a i {
@@ -696,23 +696,23 @@ button span:not(hover) {
 }
 
 #pg-7-right {
-    flex: 1 0 auto; /* Take as much space as needed, but don't grow */
+    flex: 1 0 auto; 
     padding-right: 25px;
 }
 
 #pg-7-right p {
-    margin: 0; /* Remove default margin */
-    padding: 0; /* Remove default padding */
+    margin: 0; 
+    padding: 0; 
 }
 
 
 @media (min-width: 600px) {
-    /* Adjust pg-4 cards to match pg-5 card styles */
+    
     #pg-4-card1, #pg-4-card2 {
         background-color: #000000;
         border-radius: 30px;
         color: #fff;
-        width: 45vw; /* Match width to pg-5 cards */
+        width: 45vw; 
         box-sizing: border-box;
         padding: 20px;
         display: flex;
@@ -722,7 +722,6 @@ button span:not(hover) {
         gap: 20px;
     }
 
-    /* Adjust pg-4 card text styles */
     .pg-4-card h3 {
         font-size: 24px;
         padding: 35px 20px;

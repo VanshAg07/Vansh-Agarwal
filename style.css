@@ -234,6 +234,7 @@ html , body{
     font-size: 50px; /* Reduce font size for smaller screens */
     margin-bottom: 10px; /* Add margin for better spacing */
     font-weight: 500;
+    user-select: none;
 }
 
 #pg-2-right > h3 {
@@ -241,6 +242,7 @@ html , body{
     font-size: 30px; /* Reduce font size for smaller screens */
     margin-bottom: 20px; /* Add margin for better spacing */
     font-weight: 500;
+    user-select: none;
 }
 
 #pg-2-right-cont > p {
@@ -471,7 +473,6 @@ button span:not(hover) {
     position: relative; /* Position relative for absolute positioning of child elements */
     overflow: hidden; /* Hide overflow content */
 }
-
 #pg-4-card1 h3{
     font-family: gilroyM;
     font-size: 30px;
@@ -655,7 +656,7 @@ button span:not(hover) {
 
 
 #pg-7 {
-    height: auto; /* Let height adjust based on content */
+    height: auto; 
     min-height: 10vh;
     width: 100vw;
     background-color: #000000;
@@ -677,7 +678,7 @@ button span:not(hover) {
 #pg-7-left > a {
     text-decoration: none;
     color: white;
-    margin-right: 15px;
+    margin-right: 15px;   
 }
 
 #pg-7-mid {
